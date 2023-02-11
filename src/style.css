@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.logo, .container{
+    margin: 50px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 40px;
+}
+.information h1 {
+  font-size: 50px;
+}
+.information > * {
+  margin-bottom: 20px;
+}
+.information button{
+    color: hsl(257, 40%, 49%);
+    padding: 14px 70px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+.information button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+    box-shadow: 0px 0px 20px 1px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+
+.redes{
+    margin: 20px 80px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.fab{
+    margin: 15px;
+    padding: 10px;
+    border: solid 2px;
+    border-radius: 50%;
+    font-size: 30px;
+}
+.fa-facebook-f{
+    padding: 10px 15.63px;
+}
+.fa-instagram{
+    padding: 10px 11.9px;
+}
+.fab:hover{
+    color:hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+@media (max-width:770px){
+    body{
+        background-image: url(images/bg-mobile.svg);
+        background-size: contain ;
+    }
+    .logo img{
+        width: 150px;
+    }
+    .container{
+        flex-direction: column;
+        margin: 30px;
+    }
+    .container img{
+        width: 300px;
+    }
+
+    .information{
+        align-items: center;
+    }
+    .information h1{
+        font-size: 24px;
+        text-align: center;
+    }
+    .information p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .information button{
+        padding: 14px 100px;
+    }
+
+    .redes{
+        align-items: center;
+        justify-content: center;
+    }
+    .fab{
+        font-size: 20px;
+    }
+}
